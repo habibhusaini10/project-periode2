@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Reviews - The Maze Runner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link href="assets/css/reviews.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1 class="title mt-5 has-text-centered">Reviews</h1>
+    <div class="fixed-grid mt-0 has-2-cols reviews-grid">
+        <div class="grid is-gap-3 is-row-gap-0 is-align-items-flex-start" id="reviews">
+            <template id="review">
+                <div class="has-background-black-ter p-4 rounded-4 cell columns is-gapless">
+                    <div class="column is-2">
+                        <figure class="image is-96x96">
+                            <img id="author_img" src="https://bulma.io/assets/images/placeholders/96x96.png"
+                                alt="Placeholder image" />
+                        </figure>
+                        <p class="mt-1 is-6" id="author"></p>
+                        <p class="mt-1 is-size-7" id="date"></p>
+                    </div>
+                    <div class="column">
+                        <p class="is-size-6 text-clamped" id="message"></p>
+                        <a id="clamp-btn">
+                            View more
+                        </a>
+                    </div>
+                </div>
+            </template>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-4.1.0.min.js"></script>
+    <script src="assets/js/reviews.js"></script>
+</body>
+
+</html>
